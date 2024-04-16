@@ -1,0 +1,58 @@
+takashimasuda@TakashinoMacBook-Air ~ % cd Desktop
+takashimasuda@TakashinoMacBook-Air Desktop % mkdir git_challenge
+takashimasuda@TakashinoMacBook-Air Desktop % git initi
+takashimasuda@TakashinoMacBook-Air Desktop % cd git_challenge
+takashimasuda@TakashinoMacBook-Air git_challenge % git init
+Initialized empty Git repository in /Users/takashimasuda/Desktop/git_challenge/.git/
+takashimasuda@TakashinoMacBook-Air git_challenge % touch hello_world.txt
+takashimasuda@TakashinoMacBook-Air git_challenge % ls
+hello_world.txt
+takashimasuda@TakashinoMacBook-Air git_challenge % echo "Hello,world" > hello_world.txt 
+takashimasuda@TakashinoMacBook-Air git_challenge % git add hello_world.txt 
+takashimasuda@TakashinoMacBook-Air git_challenge % git commit hello_world.txt 
+hint: Waiting for your editor to close the file... 
+zsh: suspended  git commit hello_world.txt
+takashimasuda@TakashinoMacBook-Air git_challenge % git commit -m "first time commit"
+fatal: Unable to create '/Users/takashimasuda/Desktop/git_challenge/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+takashimasuda@TakashinoMacBook-Air git_challenge % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   hello_world.txt
+
+takashimasuda@TakashinoMacBook-Air git_challenge % echo "こんにちは世界！" >> hello_world.txt 
+takashimasuda@TakashinoMacBook-Air git_challenge % git commit -m " Second time"
+fatal: Unable to create '/Users/takashimasuda/Desktop/git_challenge/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+takashimasuda@TakashinoMacBook-Air git_challenge % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   hello_world.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   hello_world.txt
+
+takashimasuda@TakashinoMacBook-Air git_challenge % cd ..
+takashimasuda@TakashinoMacBook-Air Desktop % mkdir kadai_005
+takashimasuda@TakashinoMacBook-Air Desktop % cd kadai_005
+takashimasuda@TakashinoMacBook-Air kadai_005 % touch kadai_005.txt
